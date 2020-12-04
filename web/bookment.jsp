@@ -69,7 +69,7 @@
                         <div class="ui form">
                             <h2>북먼트</h2>
                             <div class="field">
-                                <span style="font-size: 1.3em"><%=data.getContent()%></span>
+                                <p style="font-size: 1.3em; white-space:pre-wrap;"><%=data.getContent()%></p>
                             </div>
                         </div>
                     </div>

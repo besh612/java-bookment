@@ -1,9 +1,9 @@
 function CheckSignUp() {
-  const userName = document.getElementById("username");
-  const email = document.getElementById("email");
-  const password = document.getElementById("password");
+  const userName = document.getElementById("username_input");
+  const email = document.getElementById("email_input");
+  const password = document.getElementById("password_input");
 
-  if (!check(/^[a-zA-Z0-9]+$/, userName, "아이디는 영문 소문자, 숫자만 가능합니다."))
+  if (!check(/^[a-z0-9]+$/, userName, "아이디는 영문 소문자, 숫자만 가능합니다."))
     return false;
 
   if (userName.value.length < 4 || userName.value.length > 10) {
@@ -14,6 +14,9 @@ function CheckSignUp() {
   }
 
   if (!check(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/, email, "정확한 메일 주소를 입력해주세요."))
+    return false;
+
+  if (!check(/^[a-zA-Z0-9]+$/, password, "비밀번호는 영문, 숫자 조합만 가능합니다."))
     return false;
 
   if (password.value.length < 8 || password.value.length > 20) {

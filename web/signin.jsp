@@ -28,21 +28,19 @@
                 </div>
                 <input type="submit" value="로그인" class="btn solid"/>
             </form>
-            <form name="newAccount" action="signupProcess.jsp" class="sign-up-form" method="post"
-                  accept-charset="UTF-8"
-                  enctype="multipart/form-data">
+            <form name="newAccount" action="signupProcess.jsp" class="sign-up-form" method="post">
                 <h2 class="title">회원가입</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input id="username" name="username" type="text" placeholder="Username"/>
+                    <input id="username_input" name="username" type="text" placeholder="Username"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input id="email" name="email" type="email" placeholder="Email"/>
+                    <input id="email_input" name="email" type="email" placeholder="Email"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input id="password" name="password" type="password" placeholder="Password"/>
+                    <input id="password_input" name="password" type="password" placeholder="Password"/>
                 </div>
                 <input type="submit" class="btn" value="가입하기" onclick="return CheckSignUp()"/>
             </form>
