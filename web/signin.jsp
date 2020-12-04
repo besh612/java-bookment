@@ -8,40 +8,43 @@
             src="https://kit.fontawesome.com/64d58efce2.js"
             crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="${pageContext.servletContext.contextPath}/resources/signin-style.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="${pageContext.servletContext.contextPath}/resources/signin-style.css"/>
     <title>북먼트</title>
 </head>
 <body>
 <div class="container">
     <div class="forms-container">
         <div class="signin-signup">
-            <form action="#" class="sign-in-form">
+            <form action="signinProcess.jsp" class="sign-in-form" method="post">
                 <h2 class="title">로그인</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username"/>
+                    <input name="username" type="text" placeholder="Username"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password"/>
+                    <input name="password" type="password" placeholder="Password"/>
                 </div>
                 <input type="submit" value="로그인" class="btn solid"/>
             </form>
-            <form action="#" class="sign-up-form">
+            <form name="newAccount" action="signupProcess.jsp" class="sign-up-form" method="post"
+                  accept-charset="UTF-8"
+                  enctype="multipart/form-data">
                 <h2 class="title">회원가입</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Username"/>
+                    <input id="username" name="username" type="text" placeholder="Username"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email"/>
+                    <input id="email" name="email" type="email" placeholder="Email"/>
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password"/>
+                    <input id="password" name="password" type="password" placeholder="Password"/>
                 </div>
-                <input type="submit" class="btn" value="가입하기"/>
+                <input type="submit" class="btn" value="가입하기" onclick="return CheckSignUp()"/>
             </form>
         </div>
     </div>
@@ -73,7 +76,7 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="resources/js/validation.js"></script>
 <script>
   const sign_in_btn = document.querySelector("#sign-in-btn");
   const sign_up_btn = document.querySelector("#sign-up-btn");
