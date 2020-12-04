@@ -1,12 +1,8 @@
 ## 2020년 2학기 지능웹설계 프로젝트
 
----
-
 ISBN기반으로 도서를 검색하고 평가, 감상문을 남길 수 있는 web기반 독서기록장 북먼트(Bookment)
 
 ## Prerequisite
-
----
 
 - Java (jdk 1.8)
 - Maria DB (10.4.12)
@@ -14,8 +10,6 @@ ISBN기반으로 도서를 검색하고 평가, 감상문을 남길 수 있는 w
 - Kakao Search API key ([https://developers.kakao.com/product/search](https://developers.kakao.com/product/search))
 
 ## Pre-run work
-
----
 
 - DB 설정
     1. 데이터베이스 생성
@@ -63,7 +57,7 @@ ISBN기반으로 도서를 검색하고 평가, 감상문을 남길 수 있는 w
     12: String dbPass = "DB 계정 비밀번호";
     ```
 
-    파일 위치 : web**/main.jsp**
+    파일 위치 : **web/main.jsp**
 
     ```jsx
     154: headers: {'Authorization': '발급받은 Kakao API key'},
@@ -76,10 +70,8 @@ ISBN기반으로 도서를 검색하고 평가, 감상문을 남길 수 있는 w
 
 ## Run
 
----
-
 <div>
-<img src="screenshot/1.png?raw=true" width="60%">
-<img src="screenshot/2.png?raw=true" width="60%">
-<img src="screenshot/3.png?raw=true" width="60%">
+<img src="screenshot/1.png?raw=true" width="70%">
+<img src="screenshot/2.png?raw=true" width="70%">
+<img src="screenshot/3.png?raw=true" width="70%">
 </div>
