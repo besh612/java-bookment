@@ -49,7 +49,7 @@ body {
   margin-bottom: 14px;
 }
 
-.ui.borderless.menu{
+.ui.borderless.menu {
   box-shadow: none;
   flex-wrap: wrap;
   border: none;

@@ -10,7 +10,7 @@
 >
     <div class="ui visible left borderless fluid vertical menu">
         <a class="active item">
-            Home
+            Dashboard
         </a>
         <a class="item">
             Topics
@@ -19,7 +19,7 @@
             Friends
         </a>
         <a class="item">
-            History
+            Setting
         </a>
     </div>
 </div>
